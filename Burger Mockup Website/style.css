@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F13825;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0; 
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 15px 16%;
+    transition: .3s;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: row;
+}
+
+.logo img {
+    max-width: 100%;
+    width: 100px;
+    height: auto;
+    margin: 0;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist li {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navlist  a {
+    font-size: 21px;
+    font-weight: 800;
+    padding: 10px 27px;
+    color: #E8E130;
+    width: 40px;
+}
+
+.navlist a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #210d0b;
+    bottom: -3px;
+    left: 0;
+    right: 0;
+    transition: ease .40s;
+}
+
+.navlist a:hover::after {
+    width: 100%;
+}
+
+.title {
+    font-size: 21px;
+    font-weight: 800;
+    padding-right: 370px;
+    color: #E8E130;
+    margin-left: 0;
+}
+
+section {
+    /* padding: 100px 17%; */
+}
+
+.home {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.home-text h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 1rem;
+    color: #E8E130;
+    text-shadow: 5px 10px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lalezar, sans-serif;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+.dotted-text-container {
+    display: inline-flex;
+    padding: 33px 20.077px 0px 17.458px;
+    justify-content: center;
+    align-items: center;
+    border: 3px dashed #111010;
+    background: #F13825;
+    text-align: center;
+}
+
+.dotted-text {
+    color: #111010;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.image {
+    width: 580px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 594px;
+    background: radial-gradient(50% 50% at 50% 50%, #E9E3D8 0%, rgba(233, 227, 216, 0.00) 100%);
+}
+
+.image img {
+    max-width: 100%;
+    width: 510px;
+    height: auto;
+    padding-left: 70px;
+    padding-top: 30px;
+}
